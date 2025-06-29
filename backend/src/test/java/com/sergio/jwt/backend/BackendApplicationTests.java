@@ -1,4 +1,4 @@
-package swd.teamdevelop.backend;
+package com.sergio.jwt.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
