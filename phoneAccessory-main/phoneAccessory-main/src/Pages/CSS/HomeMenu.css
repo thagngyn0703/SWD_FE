@@ -1,0 +1,18 @@
+.product-grid-container {
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.card-img {
+  height: 100px;
+  object-fit: contain;
+
+  padding: 10px;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

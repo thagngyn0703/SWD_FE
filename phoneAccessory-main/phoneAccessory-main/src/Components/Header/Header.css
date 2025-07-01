@@ -1,0 +1,79 @@
+.header-custom {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between; /* Phân chia không gian đều */
+  padding: 0 20px;
+  background-color: rgb(48, 47, 47); /* Màu nền */
+}
+
+.header-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.logo {
+  flex-shrink: 0;
+  padding-right: 20px;
+}
+
+.blank-space {
+  flex-grow: 1; /* Tạo khoảng trắng trống giữa logo và menu bên phải */
+}
+
+.right-menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-custom {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.menu-custom .ant-menu-item, .menu-custom a {
+  color: #fff !important; /* Đổi màu chữ thành trắng */
+  text-decoration: none; /* Xóa gạch chân */
+}
+
+.menu-custom a:hover {
+  color: #1890ff !important; /* Màu khi hover */
+  text-decoration: none; /* Đảm bảo không có gạch chân khi hover */
+}
+
+.logo-text {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+a {
+  color: #fff;
+  text-decoration: none; /* Xóa gạch chân */
+}
+
+a:hover {
+  color: #1890ff;
+  text-decoration: none; /* Không có gạch chân khi hover */
+}
+.menu-title-custom {
+  color: #fff; /* Đổi màu tiêu đề thành màu trắng */
+  text-decoration: none; /* Xóa gạch chân */
+}
+
+.menu-item-custom {
+  padding-left: 20px;
+  text-decoration: none; /* Đảm bảo xóa gạch chân */
+}
+
+.menu-item-custom a {
+  color: #fff; /* Màu trắng cho các mục con */
+  text-decoration: none; /* Xóa gạch chân */
+}
+
+.menu-item-custom a:hover {
+  color: #1890ff; /* Màu xanh khi hover */
+  text-decoration: none; /* Đảm bảo không có gạch chân khi hover */
+}

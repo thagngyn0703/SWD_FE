@@ -1,0 +1,106 @@
+General Styling
+.admin-account-table {
+  font-family: sans-serif;
+  max-width: 100%; /* Đảm bảo bảng không vượt quá 100% màn hình */
+  width: 80%; /* Đặt chiều rộng cơ bản */
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-account-table h2,
+.admin-account-table h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Table Styling */
+.admin-account-table th,
+.admin-account-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-account-table td {
+  white-space: nowrap; /* Không cho phép xuống dòng */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Hiển thị dấu "..." khi quá dài */
+}
+
+
+.admin-account-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.admin-account-table tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.admin-account-table th:nth-child(1),
+/* Mã tài khoản */
+.admin-account-table td:nth-child(1) {
+  width: 10%;
+  /* Điều chỉnh độ rộng */
+}
+
+.admin-account-table th:nth-child(2),
+/* Quyền */
+.admin-account-table td:nth-child(2) {
+  width: 20%;
+}
+
+.admin-account-table th:nth-child(3),
+/* Số điện thoại */
+.admin-account-table td:nth-child(3) {
+  width: 25%;
+}
+
+.admin-account-table th:nth-child(4),
+/* Mật khẩu */
+.admin-account-table td:nth-child(4) {
+  text-align: center;
+  width: 20%;
+}
+
+.admin-account-table th:nth-child(5),
+/* Hành động */
+.admin-account-table td:nth-child(5) {
+  width: 25%;
+}
+
+
+/* Form Styling */
+.admin-account-table input[type="text"],
+.admin-account-table input[type="password"] {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.admin-account-table button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.admin-account-table button:hover {
+  opacity: 0.8;
+}
+
+/* Additional Styling (optional) */
+.admin-account-table .editing td {
+  background-color: #ffffcc;
+  /* Highlight editing row */
+}

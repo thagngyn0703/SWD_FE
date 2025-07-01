@@ -1,0 +1,266 @@
+/* ProductManagement.css */
+
+/* Container Styles */
+.product-table {
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-table h1 {
+  margin-bottom: 24px;
+  color: #1a1a1a;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Search and Filter Section */
+.filters-section {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #e8e8e8;
+}
+
+/* Search Input */
+.ant-input-affix-wrapper {
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  transition: all 0.3s;
+}
+
+.ant-input-affix-wrapper:hover {
+  border-color: #40a9ff;
+}
+
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* Select Dropdowns */
+.ant-select {
+  min-width: 180px;
+}
+
+.ant-select:not(:last-child) {
+  margin-right: 12px;
+}
+
+/* Table Styles */
+.ant-table-wrapper {
+  margin-top: 16px;
+}
+
+.ant-table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #e6f7ff;
+}
+
+/* Product Image */
+.product-image {
+  border-radius: 4px;
+  object-fit: cover;
+  border: 1px solid #f0f0f0;
+}
+
+/* Status Tags */
+.ant-tag {
+  min-width: 80px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Buttons */
+.status-button {
+  min-width: 120px;
+}
+
+.ant-btn-link {
+  padding: 0 8px;
+}
+
+.ant-btn:hover {
+  transform: translateY(-1px);
+  transition: transform 0.2s;
+}
+
+/* Hot Status Button */
+.hot-status-btn {
+  min-width: 100px;
+  transition: all 0.3s;
+}
+
+.hot-status-btn.active {
+  background: #ff4d4f;
+  border-color: #ff4d4f;
+  color: white;
+}
+
+/* Badge */
+.ant-badge {
+  margin-right: 24px;
+}
+
+.ant-badge-count {
+  box-shadow: 0 0 0 1px #fff;
+}
+
+/* Modal Styles */
+.ant-modal-header {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 24px;
+  border-radius: 8px 8px 0 0;
+}
+
+.ant-modal-content {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ant-modal-body {
+  padding: 24px;
+}
+
+.status-modal-buttons {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.status-modal-buttons .ant-btn {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Notification List */
+.ant-list-item {
+  padding: 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.ant-list-item:hover {
+  background-color: #fafafa;
+}
+
+.ant-list-item-meta-title {
+  margin-bottom: 4px !important;
+  color: #1a1a1a;
+}
+
+.ant-list-item-meta-description {
+  color: #ff4d4f;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .product-table {
+    padding: 16px;
+  }
+
+  .filters-section {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ant-select,
+  .ant-input-affix-wrapper {
+    width: 100% !important;
+  }
+
+  .ant-space {
+    gap: 12px !important;
+  }
+
+  .ant-table {
+    font-size: 14px;
+  }
+
+  .status-button {
+    min-width: 90px;
+  }
+}
+
+/* Loading States */
+.ant-spin-spinning {
+  margin: 24px 0;
+}
+
+/* Toast Notifications */
+.Toastify__toast {
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.Toastify__toast--success {
+  background: #52c41a;
+}
+
+.Toastify__toast--error {
+  background: #ff4d4f;
+}
+
+.Toastify__toast--warning {
+  background: #faad14;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-table {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Empty State */
+.ant-table-empty .ant-table-placeholder {
+  padding: 48px 0;
+}
+
+.ant-table-empty .ant-empty-description {
+  color: #8c8c8c;
+}
+
+/* Scrollbar Styles */
+.product-table ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.product-table ::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 3px;
+}
+
+.product-table ::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 3px;
+}
+
+.product-table ::-webkit-scrollbar-thumb:hover {
+  background: #bfbfbf;
+}

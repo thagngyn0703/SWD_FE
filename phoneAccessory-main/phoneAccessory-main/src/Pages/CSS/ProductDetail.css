@@ -1,0 +1,168 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Product detail container */
+.product-container {
+    display: flex;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+
+}
+
+/* Product image styling */
+.product-image img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: -50px;
+}
+
+/* Product details styling */
+.product-details {
+    max-width: 600px;
+    padding-left: 30px;
+}
+
+/* Product title */
+.product-details h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Product price */
+.product-details .product-price {
+    font-size: 1.75rem;
+    color: #ff5722;
+    margin-bottom: 25px;
+}
+
+/* Product description */
+.product-details .product-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Quantity input styling */
+.product-details input[type="number"] {
+    width: 70px;
+    padding: 8px;
+    margin-right: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Add to Cart button */
+.product-details button {
+    padding: 12px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.product-details button:hover {
+    background-color: #e64a19;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-details {
+        padding-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .product-details h1 {
+        font-size: 2rem;
+    }
+
+    .product-details .product-price {
+        font-size: 1.5rem;
+    }
+
+    .product-details .product-description {
+        font-size: 1rem;
+    }
+
+    .product-carousel {
+        position: relative;
+
+        padding: 40px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .carousel-title {
+        color: Black;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .product-slider .slick-slide {
+        padding: 0 10px;
+    }
+
+    .product-card-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-card {
+
+        border-radius: 10px;
+        overflow: hidden;
+        width: 90%;
+    }
+
+    .product-image {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .left-arrow {
+        left: -20px;
+    }
+
+    .right-arrow {
+        right: -20px;
+    }
+
+}
